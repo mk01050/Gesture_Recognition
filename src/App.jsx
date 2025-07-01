@@ -362,8 +362,8 @@ export default function App() {
           style={{
             
             position: "absolute",
-            top: 300,
-            left: 500,
+            top: 250,
+            left: 700,
             
           }}
           className="w-1/2"
