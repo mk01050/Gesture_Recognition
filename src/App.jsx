@@ -38,19 +38,7 @@ import RaisedFistGesture from "./gestures/RaisedFist.js";
 import * as tf from "@tensorflow/tfjs";
 import "@tensorflow/tfjs-backend-webgl";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDmHhwxA1b-LhTDSVtUDQiLJvYYSreHQPE",
-  authDomain: "videome-41051.firebaseapp.com",
-  projectId: "videome-41051",
-  storageBucket: "videome-41051.firebasestorage.app",
-  messagingSenderId: "1077052000045",
-  appId: "1:1077052000045:web:60b98be84bba60b46435a4",
-  measurementId: "G-WEBW7QMJXC",
-};
-
-const app =
-  getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-const firestore = getFirestore(app);
+import { firestore } from "./firebaseConfig.js";
 
 const servers = {
   iceServers: [
